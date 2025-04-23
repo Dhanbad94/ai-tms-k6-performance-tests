@@ -16,4 +16,10 @@ k6 run -e env=dev --http-debug="full" ./tests/k6-guests-user-requests.js
 ## Running commands using run-tests script
 ./run-tests -t <test-type> -e <environment> -s <service> -p <path>
 
+## Running commands for Linux using run-tests script
+
+sed -i 's/\r$//' ./run-tests
+dos2unix ./run-tests -t load -e staging -f requests -p node 
+./run-tests -t load -e staging -f requests -p node
+
 ## Results Visualization
