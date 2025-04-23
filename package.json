@@ -1,0 +1,54 @@
+{
+  "name": "@ai/k6-performance-tests",
+  "version": "1.0.0-SNAPSHOT",
+  "title": "Zebrafish Performance Tests",
+  "description": "Zebrafish Performance Tests",
+  "engines": {
+    "node": "~16",
+    "npm": "~8"
+  },
+  "scripts": {
+    "bundle": "webpack",
+    "clean": "npm cache clean --force && rm -rf ./node_modules",
+    "build": "echo 'no build is required'",
+    "lint": "ai-tools-npm-build lint",
+    "lint:fix": "eslint --ext .js --fix .",
+    "lint:checkstyle": "eslint --ext .js -f checkstyle . -o generated-files/lint-checkstyle.xml || exit 0",
+    "document": "echo 'no documentation required'",
+    "test": "echo 'no test required'",
+    "test:unit": "echo 'no test required'",
+    "test:unit:coverage": "echo 'no test required'",
+    "test:integration": "echo 'no test required'",
+    "test:integration:coverage": "echo 'no test required'",
+    "dependency:check": "ai-tools-npm-build dependency-check",
+    "helm:build": "echo 'no helm is required'",
+    "helm:lint": "echo 'no helm is required'",
+    "helm:kubeval": "ai-npm-build-helm kubeval",
+    "helm:publish": "echo 'no helm is required'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/contextlabs/ai-tms-k6-performance-tests.git"
+  },
+  "author": "ai Development Team <dev@contextlabs.com>",
+  "homepage": "https://bitbucket.org/contextlabs/ai-tms-k6-performance-tests#readme",
+  "config": {
+    "helm_chart_name": "ai-tms-k6-performance-tests",
+    "image_name": "$registry/dbx/ai-tms-k6-performance-tests"
+  },
+  "dependencies": {
+    "@babel/core": "^7.22.6",
+    "@babel/preset-env": "^7.22.6",
+    "@babel/register": "^7.22.5",
+    "babel-loader": "^9.1.2",
+    "core-js": "^3.31.1",
+    "k6": "^0.0.0",
+    "prettier": "^3.0.0",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "@ai/npm-build-helm": "^1.0.9",
+    "@ai/tools-npm-build": "^2.0.4-SNAPSHOT.20230524050237"
+  }
+}

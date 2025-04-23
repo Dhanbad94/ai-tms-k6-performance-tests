@@ -1,0 +1,4 @@
+{
+    "summaryTrendStats": ["min", "max","p(50)", "p(75)", "p(90)", "p(95)", "p(99)"],
+    "userAgent": "K6"
+}
