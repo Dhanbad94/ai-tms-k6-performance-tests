@@ -30,7 +30,7 @@
     "type": "git",
     "url": "git+ssh://github.com/Dhanbad94/ai-tms-k6-performance-tests"
   },
-  "author": "ai Development Team <dev@contextlabs.com>",
+  "author": "ai Development Team <dev@appinventiv.com>",
   "homepage": "https://github.com/Dhanbad94/ai-tms-k6-performance-tests/blob/main/README.md",
   "config": {
     "helm_chart_name": "ai-tms-k6-performance-tests",
