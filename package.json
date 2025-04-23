@@ -28,10 +28,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/contextlabs/ai-tms-k6-performance-tests.git"
+    "url": "git+ssh://github.com/Dhanbad94/ai-tms-k6-performance-tests"
   },
   "author": "ai Development Team <dev@contextlabs.com>",
-  "homepage": "https://bitbucket.org/contextlabs/ai-tms-k6-performance-tests#readme",
+  "homepage": "https://github.com/Dhanbad94/ai-tms-k6-performance-tests/blob/main/README.md",
   "config": {
     "helm_chart_name": "ai-tms-k6-performance-tests",
     "image_name": "$registry/dbx/ai-tms-k6-performance-tests"
